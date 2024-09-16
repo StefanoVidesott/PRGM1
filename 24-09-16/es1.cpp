@@ -5,10 +5,14 @@
 int main() {
 
     char character;
+    int ascii_character;
 
     std::cout << "Enter a character: ";
     std::cin >> character;
+
+    ascii_character = (int)character;
     std::cout << character << " is the character entered" << std::endl;
+
 
     return 0;
 
