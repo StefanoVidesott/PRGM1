@@ -13,7 +13,7 @@ int main() {
     std::cout << "Enter the seconds: ";
     std::cin >> seconds;
 
-    total = hours * 3600 + minutes * 60 + seconds;
+    total = seconds + 60*(minutes + 60*hours);
     std::cout << "The total seconds are: " << total << std::endl;
 
     return 0;
